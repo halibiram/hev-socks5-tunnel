@@ -42,6 +42,7 @@ LOCAL_C_INCLUDES := \
 	$(LOCAL_PATH)/third-part/hev-task-system/include
 LOCAL_CFLAGS += -DFD_SET_DEFINED -DSOCKLEN_T_DEFINED -DENABLE_LIBRARY
 LOCAL_CFLAGS += $(VERSION_CFLAGS)
+LOCAL_CFLAGS += -DPKGNAME=com/simplexray/an/service -DCLSNAME=TProxyService
 ifeq ($(TARGET_ARCH_ABI),armeabi-v7a)
 LOCAL_CFLAGS += -mfpu=neon
 endif

@@ -54,10 +54,10 @@ static void native_stop_service (JNIEnv *env, jobject thiz);
 static jlongArray native_get_stats (JNIEnv *env, jobject thiz);
 
 static JNINativeMethod native_methods[] = {
-    { "TProxyStartService", "(Ljava/lang/String;I)V",
+    { "TProxyStartServiceNative", "(Ljava/lang/String;I)V",
       (void *)native_start_service },
-    { "TProxyStopService", "()V", (void *)native_stop_service },
-    { "TProxyGetStats", "()[J", (void *)native_get_stats },
+    { "TProxyStopServiceNative", "()V", (void *)native_stop_service },
+    { "TProxyGetStatsNative", "()[J", (void *)native_get_stats },
 };
 
 static void
